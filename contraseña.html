@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+        }
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         html {
             font-size: 62.5%;
+        }
+        body {
+            font-family: "Quicksand", sans-serif;
         }
         .new-password {
             width: 100%;
@@ -26,7 +36,6 @@
         }
         .new-password__image-container img {
             width: 150px;
-            max-width: 150px;
             height: 30px;
         }
         .new-password__text-container {
@@ -91,11 +100,9 @@
 </head>
 <body>
     <section class="new-password">
-        <div class="new-password__image-container">
-            <figure>
-                <img src="./assets/img/logo_yard_sale.svg" alt="Logo yard sale">
-            </figure>
-        </div>
+        <figure class="new-password__image-container">
+            <img src="./assets/img/logo_yard_sale.svg" alt="Logo yard sale">
+        </figure>
         <div class="new-password__text-container">
             <h1 class="form__h1">Create a new password</h1>
             <p>Enter a new password for your account</p>
