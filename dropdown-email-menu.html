@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        .dropdown-menu__container {
+            width: 155px;
+            height: 190px;
+            padding: 25px;
+            text-align: end;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.119789);
+        }
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+        .dropdown__list {
+            list-style: none;
+        }
+        .dropdown__list li:nth-child(2) {
+            margin-top: 30px;
+        }
+        .dropdown__list li:nth-child(3) {
+            width: 100px;
+            margin-top: 30px;
+            margin-right: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #979797;
+        }
+        .dropdown__list li a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #000000;
+        }
+        .dropdown__list li .green-anchor {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--hospital-green);
+        }
+    </style>
+</head>
+<body>
+    <section class="dropdown-menu__container">
+        <ul class="dropdown__list">
+            <li><a href="">My order</a></li>
+            <li><a href="">My account</a></li>
+            <li><a href="" class="green-anchor">Sign out</a></li>
+        </ul>
+    </section>
+</body>
+</html>
