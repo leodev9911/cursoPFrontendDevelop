@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+        .card__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 140px);
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 30px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .card-below__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .card-text__container .roboto-text {
+            margin-bottom: 3px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card-text__container p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #797979;
+        }
+        .card img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+        }
+        .car-icon img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+        @media (min-width: 720px) {
+            .card__container {
+                grid-template-columns: repeat(auto-fill, 240px);
+                column-gap: 20px;
+                row-gap: 30px;
+                padding-top: 55px;
+                padding-bottom: 20px;
+            }
+            .card-text__container .roboto-text {
+                font-size: 1.6rem;
+            }
+            .card-text__container p {
+                font-size: 1.4rem;
+            }
+            .card img {
+                width: 240px;
+                height: 240px;
+                object-fit: cover;
+            }
+            .car-icon img {
+                width: 45px;
+                height: 45px;
+                object-fit: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="card__container">
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article> <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="card">
+                <img src="./assets/img/fridge.png" alt="">
+                <div class="card-below__container">
+                    <div class="card-text__container">
+                        <p class="roboto-text">$ 120,00</p>
+                        <p>Retro refrigerator</p>
+                    </div>
+                    <figure class="car-icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
