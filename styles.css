@@ -69,47 +69,14 @@ body {
     background-color: var(--hospital-green);
 }
 .dropdown-menu__container {
-    position: fixed;
-    top: 44px;
-    right: 98px;
-    width: 155px;
-    height: 190px;
-    padding: 25px;
-    text-align: end;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.119789);
+    display: none;
 }
-.dropdown__list {
-    list-style: none;
-}
-.dropdown__list li:nth-child(2) {
-    margin-top: 30px;
-}
-.dropdown__list li:nth-child(3) {
-    width: 100px;
-    margin-top: 30px;
-    margin-right: 25px;
-    padding-top: 25px;
-    border-top: 1px solid #979797;
-}
-.dropdown__list li a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #000000;
-}
-.dropdown__list li .green-anchor {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--hospital-green);
-}      
 @media (min-width: 720px) {
     .nav__container {
         height: 55px;
         justify-items: start;
         padding: 0px 0px 0px 50px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+        box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.046805);
     }
     .nav__container li {
         list-style: none;
@@ -157,6 +124,9 @@ body {
         align-items: center;
         padding-left: 30px;
     }
+    .dropdown-click-pointer {
+        cursor: pointer;
+    }
     .nav-right__container p {
         display: block;
         margin-right: 10px;
@@ -170,4 +140,45 @@ body {
         margin-top: 5px;
         margin-right: 25px;
     }
+    .dropdown-menu__container {
+        display: block;
+        position: absolute;
+        top: 52px;
+        right: 98px;
+        width: 155px;
+        height: 190px;
+        padding: 25px;
+        text-align: end;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.119789);
+        background-color: var(--white);
+    }
+    .inactive {
+        display: none;
+    }
+    .dropdown__list {
+        list-style: none;
+    }
+    .dropdown__list li:nth-child(2) {
+        margin-top: 30px;
+    }
+    .dropdown__list li:nth-child(3) {
+        width: 100px;
+        margin-top: 30px;
+        margin-right: 25px;
+        padding-top: 25px;
+        border-top: 1px solid #979797;
+    }
+    .dropdown__list li a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000000;
+    }
+    .dropdown__list li .green-anchor {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--hospital-green);
+    }          
 }
