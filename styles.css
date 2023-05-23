@@ -10,8 +10,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 body {
     font-family: "Quicksand", sans-serif;
+}
+.inactive{
+    display: none;
 }
 .nav__container {
     display: grid;
@@ -28,6 +34,7 @@ body {
     width: 23px;
     height: 18px;
     object-fit: cover;
+    cursor: pointer;
 }
 .logo-nav__container img {
     width: 95px;
@@ -36,6 +43,60 @@ body {
 }
 .nav-left__container {
     display: none;
+}
+.mobile-menu__container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 670px;
+    padding: 0px 40px 0px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.119789);
+    background-color: var(--white);
+}
+.first-list__container, .second-list__container, .third-list__container {            
+    list-style: none;
+}
+.first-list__container {
+    padding-bottom: 40px;
+}
+.first-list__container li {
+    margin-top: 30px;
+}
+.second-list__container {
+    border-top: 1px solid #979797;
+}
+.second-list__container li {
+    margin-top: 40px;
+}
+.third-list__container {
+    padding-top: 80px;
+}
+.third-list__container li {
+    margin-bottom: 5px;
+}
+.mobile-menu__container ul li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+}
+.mobile-menu__container ul li a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.third-list__container .email-text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #000000;
+}
+.mobile-menu__container .third-list__container .green-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--hospital-green);
 }
 .nav-right__container {
     padding-right: 19px;
@@ -64,14 +125,11 @@ body {
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    font-size: 0.65rem;
+    font-size: 0.80rem;
     font-weight: 700;
     background-color: var(--hospital-green);
 }
-.dropdown-menu__container {
-    display: none;
-}
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
     .nav__container {
         height: 55px;
         justify-items: start;
@@ -110,7 +168,7 @@ body {
     }
     .nav-left__container a {
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 500;
         color: #C7C7C7;
         font-family: "Quicksand", sans-serif;
@@ -130,7 +188,7 @@ body {
     .nav-right__container p {
         display: block;
         margin-right: 10px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300;
     }
     .nav-right__container .arrow-down {
@@ -171,13 +229,13 @@ body {
     }
     .dropdown__list li a {
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: #000000;
     }
     .dropdown__list li .green-anchor {
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: var(--hospital-green);
     }          
