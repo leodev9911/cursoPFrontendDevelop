@@ -259,6 +259,7 @@ main {
     width: 140px;
     height: 140px;
     object-fit: cover;
+    cursor: pointer;
 }
 .car-icon img {
     width: 30px;
@@ -280,7 +281,19 @@ main {
     border-radius: 10px 0px 10px 10px;
 }
 .product-detail__container .close-icon {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+.product-detail__container .close-icon:hover {
+    cursor: pointer;
 }
 .product-image {
     margin-bottom: 40px;
@@ -486,21 +499,6 @@ main {
         width: 45px;
         height: 45px;
         object-fit: cover;
-    }
-    .product-detail__container .close-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 20px;
-        left: 15px;
-        width: 40px;
-        height: 40px;
-        background-color: white;
-        border-radius: 50%;
-    }
-    .product-detail__container .close-icon:hover {
-        cursor: pointer;
     }
     .inactive {
         display: none;
